@@ -1,0 +1,788 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		701870551BC91A390082A71F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 701870541BC91A390082A71F /* main.m */; };
+		701870581BC91A390082A71F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 701870571BC91A390082A71F /* AppDelegate.m */; };
+		7018705B1BC91A390082A71F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7018705A1BC91A390082A71F /* ViewController.m */; };
+		7018705E1BC91A390082A71F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7018705C1BC91A390082A71F /* Main.storyboard */; };
+		701870601BC91A390082A71F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7018705F1BC91A390082A71F /* Assets.xcassets */; };
+		701870631BC91A390082A71F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 701870611BC91A390082A71F /* LaunchScreen.storyboard */; };
+		7018706E1BC91A390082A71F /* _9_AlertTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7018706D1BC91A390082A71F /* _9_AlertTests.m */; };
+		701870791BC91A390082A71F /* _9_AlertUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 701870781BC91A390082A71F /* _9_AlertUITests.m */; };
+		7018707E1BC91A390082A71F /* 09-Alert WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 7018707D1BC91A390082A71F /* 09-Alert WatchKit App.app */; };
+		701870841BC91A390082A71F /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 701870821BC91A390082A71F /* Interface.storyboard */; };
+		701870861BC91A390082A71F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 701870851BC91A390082A71F /* Assets.xcassets */; };
+		7018708D1BC91A390082A71F /* 09-Alert WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7018708C1BC91A390082A71F /* 09-Alert WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		701870951BC91A390082A71F /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 701870941BC91A390082A71F /* InterfaceController.m */; };
+		701870981BC91A390082A71F /* ExtensionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 701870971BC91A390082A71F /* ExtensionDelegate.m */; };
+		7018709B1BC91A390082A71F /* NotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7018709A1BC91A390082A71F /* NotificationController.m */; };
+		7018709D1BC91A390082A71F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7018709C1BC91A390082A71F /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7018706A1BC91A390082A71F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 701870481BC91A390082A71F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7018704F1BC91A390082A71F;
+			remoteInfo = "09-Alert";
+		};
+		701870751BC91A390082A71F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 701870481BC91A390082A71F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7018704F1BC91A390082A71F;
+			remoteInfo = "09-Alert";
+		};
+		7018707F1BC91A390082A71F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 701870481BC91A390082A71F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7018707C1BC91A390082A71F;
+			remoteInfo = "09-Alert WatchKit App";
+		};
+		7018708E1BC91A390082A71F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 701870481BC91A390082A71F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7018708B1BC91A390082A71F;
+			remoteInfo = "09-Alert WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		701870A41BC91A390082A71F /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				7018708D1BC91A390082A71F /* 09-Alert WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		701870A81BC91A390082A71F /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				7018707E1BC91A390082A71F /* 09-Alert WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		701870501BC91A390082A71F /* 09-Alert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "09-Alert.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		701870541BC91A390082A71F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		701870561BC91A390082A71F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		701870571BC91A390082A71F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		701870591BC91A390082A71F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		7018705A1BC91A390082A71F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		7018705D1BC91A390082A71F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7018705F1BC91A390082A71F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		701870621BC91A390082A71F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		701870641BC91A390082A71F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		701870691BC91A390082A71F /* 09-AlertTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "09-AlertTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7018706D1BC91A390082A71F /* _9_AlertTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _9_AlertTests.m; sourceTree = "<group>"; };
+		7018706F1BC91A390082A71F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		701870741BC91A390082A71F /* 09-AlertUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "09-AlertUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		701870781BC91A390082A71F /* _9_AlertUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _9_AlertUITests.m; sourceTree = "<group>"; };
+		7018707A1BC91A390082A71F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7018707D1BC91A390082A71F /* 09-Alert WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "09-Alert WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		701870831BC91A390082A71F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		701870851BC91A390082A71F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		701870871BC91A390082A71F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7018708C1BC91A390082A71F /* 09-Alert WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "09-Alert WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		701870921BC91A390082A71F /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		701870931BC91A390082A71F /* InterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
+		701870941BC91A390082A71F /* InterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterfaceController.m; sourceTree = "<group>"; };
+		701870961BC91A390082A71F /* ExtensionDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExtensionDelegate.h; sourceTree = "<group>"; };
+		701870971BC91A390082A71F /* ExtensionDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExtensionDelegate.m; sourceTree = "<group>"; };
+		701870991BC91A390082A71F /* NotificationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationController.h; sourceTree = "<group>"; };
+		7018709A1BC91A390082A71F /* NotificationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationController.m; sourceTree = "<group>"; };
+		7018709C1BC91A390082A71F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7018709E1BC91A390082A71F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7018704D1BC91A390082A71F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		701870661BC91A390082A71F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		701870711BC91A390082A71F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		701870891BC91A390082A71F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		701870471BC91A390082A71F = {
+			isa = PBXGroup;
+			children = (
+				701870521BC91A390082A71F /* 09-Alert */,
+				7018706C1BC91A390082A71F /* 09-AlertTests */,
+				701870771BC91A390082A71F /* 09-AlertUITests */,
+				701870811BC91A390082A71F /* 09-Alert WatchKit App */,
+				701870901BC91A390082A71F /* 09-Alert WatchKit Extension */,
+				701870511BC91A390082A71F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		701870511BC91A390082A71F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				701870501BC91A390082A71F /* 09-Alert.app */,
+				701870691BC91A390082A71F /* 09-AlertTests.xctest */,
+				701870741BC91A390082A71F /* 09-AlertUITests.xctest */,
+				7018707D1BC91A390082A71F /* 09-Alert WatchKit App.app */,
+				7018708C1BC91A390082A71F /* 09-Alert WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		701870521BC91A390082A71F /* 09-Alert */ = {
+			isa = PBXGroup;
+			children = (
+				701870561BC91A390082A71F /* AppDelegate.h */,
+				701870571BC91A390082A71F /* AppDelegate.m */,
+				701870591BC91A390082A71F /* ViewController.h */,
+				7018705A1BC91A390082A71F /* ViewController.m */,
+				7018705C1BC91A390082A71F /* Main.storyboard */,
+				7018705F1BC91A390082A71F /* Assets.xcassets */,
+				701870611BC91A390082A71F /* LaunchScreen.storyboard */,
+				701870641BC91A390082A71F /* Info.plist */,
+				701870531BC91A390082A71F /* Supporting Files */,
+			);
+			path = "09-Alert";
+			sourceTree = "<group>";
+		};
+		701870531BC91A390082A71F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				701870541BC91A390082A71F /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7018706C1BC91A390082A71F /* 09-AlertTests */ = {
+			isa = PBXGroup;
+			children = (
+				7018706D1BC91A390082A71F /* _9_AlertTests.m */,
+				7018706F1BC91A390082A71F /* Info.plist */,
+			);
+			path = "09-AlertTests";
+			sourceTree = "<group>";
+		};
+		701870771BC91A390082A71F /* 09-AlertUITests */ = {
+			isa = PBXGroup;
+			children = (
+				701870781BC91A390082A71F /* _9_AlertUITests.m */,
+				7018707A1BC91A390082A71F /* Info.plist */,
+			);
+			path = "09-AlertUITests";
+			sourceTree = "<group>";
+		};
+		701870811BC91A390082A71F /* 09-Alert WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				701870821BC91A390082A71F /* Interface.storyboard */,
+				701870851BC91A390082A71F /* Assets.xcassets */,
+				701870871BC91A390082A71F /* Info.plist */,
+			);
+			path = "09-Alert WatchKit App";
+			sourceTree = "<group>";
+		};
+		701870901BC91A390082A71F /* 09-Alert WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				701870931BC91A390082A71F /* InterfaceController.h */,
+				701870941BC91A390082A71F /* InterfaceController.m */,
+				701870961BC91A390082A71F /* ExtensionDelegate.h */,
+				701870971BC91A390082A71F /* ExtensionDelegate.m */,
+				701870991BC91A390082A71F /* NotificationController.h */,
+				7018709A1BC91A390082A71F /* NotificationController.m */,
+				7018709C1BC91A390082A71F /* Assets.xcassets */,
+				7018709E1BC91A390082A71F /* Info.plist */,
+				701870911BC91A390082A71F /* Supporting Files */,
+			);
+			path = "09-Alert WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		701870911BC91A390082A71F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				701870921BC91A390082A71F /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7018704F1BC91A390082A71F /* 09-Alert */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 701870A91BC91A390082A71F /* Build configuration list for PBXNativeTarget "09-Alert" */;
+			buildPhases = (
+				7018704C1BC91A390082A71F /* Sources */,
+				7018704D1BC91A390082A71F /* Frameworks */,
+				7018704E1BC91A390082A71F /* Resources */,
+				701870A81BC91A390082A71F /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				701870801BC91A390082A71F /* PBXTargetDependency */,
+			);
+			name = "09-Alert";
+			productName = "09-Alert";
+			productReference = 701870501BC91A390082A71F /* 09-Alert.app */;
+			productType = "com.apple.product-type.application";
+		};
+		701870681BC91A390082A71F /* 09-AlertTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 701870AC1BC91A390082A71F /* Build configuration list for PBXNativeTarget "09-AlertTests" */;
+			buildPhases = (
+				701870651BC91A390082A71F /* Sources */,
+				701870661BC91A390082A71F /* Frameworks */,
+				701870671BC91A390082A71F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7018706B1BC91A390082A71F /* PBXTargetDependency */,
+			);
+			name = "09-AlertTests";
+			productName = "09-AlertTests";
+			productReference = 701870691BC91A390082A71F /* 09-AlertTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		701870731BC91A390082A71F /* 09-AlertUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 701870AF1BC91A390082A71F /* Build configuration list for PBXNativeTarget "09-AlertUITests" */;
+			buildPhases = (
+				701870701BC91A390082A71F /* Sources */,
+				701870711BC91A390082A71F /* Frameworks */,
+				701870721BC91A390082A71F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				701870761BC91A390082A71F /* PBXTargetDependency */,
+			);
+			name = "09-AlertUITests";
+			productName = "09-AlertUITests";
+			productReference = 701870741BC91A390082A71F /* 09-AlertUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		7018707C1BC91A390082A71F /* 09-Alert WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 701870A51BC91A390082A71F /* Build configuration list for PBXNativeTarget "09-Alert WatchKit App" */;
+			buildPhases = (
+				7018707B1BC91A390082A71F /* Resources */,
+				701870A41BC91A390082A71F /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7018708F1BC91A390082A71F /* PBXTargetDependency */,
+			);
+			name = "09-Alert WatchKit App";
+			productName = "09-Alert WatchKit App";
+			productReference = 7018707D1BC91A390082A71F /* 09-Alert WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		7018708B1BC91A390082A71F /* 09-Alert WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 701870A11BC91A390082A71F /* Build configuration list for PBXNativeTarget "09-Alert WatchKit Extension" */;
+			buildPhases = (
+				701870881BC91A390082A71F /* Sources */,
+				701870891BC91A390082A71F /* Frameworks */,
+				7018708A1BC91A390082A71F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "09-Alert WatchKit Extension";
+			productName = "09-Alert WatchKit Extension";
+			productReference = 7018708C1BC91A390082A71F /* 09-Alert WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		701870481BC91A390082A71F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "小码哥";
+				TargetAttributes = {
+					7018704F1BC91A390082A71F = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					701870681BC91A390082A71F = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 7018704F1BC91A390082A71F;
+					};
+					701870731BC91A390082A71F = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 7018704F1BC91A390082A71F;
+					};
+					7018707C1BC91A390082A71F = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					7018708B1BC91A390082A71F = {
+						CreatedOnToolsVersion = 7.0;
+					};
+				};
+			};
+			buildConfigurationList = 7018704B1BC91A390082A71F /* Build configuration list for PBXProject "09-Alert" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 701870471BC91A390082A71F;
+			productRefGroup = 701870511BC91A390082A71F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7018704F1BC91A390082A71F /* 09-Alert */,
+				701870681BC91A390082A71F /* 09-AlertTests */,
+				701870731BC91A390082A71F /* 09-AlertUITests */,
+				7018707C1BC91A390082A71F /* 09-Alert WatchKit App */,
+				7018708B1BC91A390082A71F /* 09-Alert WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7018704E1BC91A390082A71F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				701870631BC91A390082A71F /* LaunchScreen.storyboard in Resources */,
+				701870601BC91A390082A71F /* Assets.xcassets in Resources */,
+				7018705E1BC91A390082A71F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		701870671BC91A390082A71F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		701870721BC91A390082A71F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7018707B1BC91A390082A71F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				701870861BC91A390082A71F /* Assets.xcassets in Resources */,
+				701870841BC91A390082A71F /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7018708A1BC91A390082A71F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7018709D1BC91A390082A71F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7018704C1BC91A390082A71F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7018705B1BC91A390082A71F /* ViewController.m in Sources */,
+				701870581BC91A390082A71F /* AppDelegate.m in Sources */,
+				701870551BC91A390082A71F /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		701870651BC91A390082A71F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7018706E1BC91A390082A71F /* _9_AlertTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		701870701BC91A390082A71F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				701870791BC91A390082A71F /* _9_AlertUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		701870881BC91A390082A71F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				701870981BC91A390082A71F /* ExtensionDelegate.m in Sources */,
+				701870951BC91A390082A71F /* InterfaceController.m in Sources */,
+				7018709B1BC91A390082A71F /* NotificationController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7018706B1BC91A390082A71F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7018704F1BC91A390082A71F /* 09-Alert */;
+			targetProxy = 7018706A1BC91A390082A71F /* PBXContainerItemProxy */;
+		};
+		701870761BC91A390082A71F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7018704F1BC91A390082A71F /* 09-Alert */;
+			targetProxy = 701870751BC91A390082A71F /* PBXContainerItemProxy */;
+		};
+		701870801BC91A390082A71F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7018707C1BC91A390082A71F /* 09-Alert WatchKit App */;
+			targetProxy = 7018707F1BC91A390082A71F /* PBXContainerItemProxy */;
+		};
+		7018708F1BC91A390082A71F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7018708B1BC91A390082A71F /* 09-Alert WatchKit Extension */;
+			targetProxy = 7018708E1BC91A390082A71F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7018705C1BC91A390082A71F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7018705D1BC91A390082A71F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		701870611BC91A390082A71F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				701870621BC91A390082A71F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		701870821BC91A390082A71F /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				701870831BC91A390082A71F /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7018709F1BC91A390082A71F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		701870A01BC91A390082A71F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		701870A21BC91A390082A71F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "09-Alert WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.520it.-9-Alert.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		701870A31BC91A390082A71F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "09-Alert WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.520it.-9-Alert.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		701870A61BC91A390082A71F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = _9_Alert_WatchKit_Extension;
+				INFOPLIST_FILE = "09-Alert WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.520it.-9-Alert.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		701870A71BC91A390082A71F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = _9_Alert_WatchKit_Extension;
+				INFOPLIST_FILE = "09-Alert WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.520it.-9-Alert.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		701870AA1BC91A390082A71F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "09-Alert/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.520it.-9-Alert";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		701870AB1BC91A390082A71F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "09-Alert/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.520it.-9-Alert";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		701870AD1BC91A390082A71F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "09-AlertTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.520it.-9-AlertTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/09-Alert.app/09-Alert";
+			};
+			name = Debug;
+		};
+		701870AE1BC91A390082A71F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "09-AlertTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.520it.-9-AlertTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/09-Alert.app/09-Alert";
+			};
+			name = Release;
+		};
+		701870B01BC91A390082A71F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "09-AlertUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.520it.-9-AlertUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "09-Alert";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		701870B11BC91A390082A71F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "09-AlertUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.520it.-9-AlertUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "09-Alert";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7018704B1BC91A390082A71F /* Build configuration list for PBXProject "09-Alert" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7018709F1BC91A390082A71F /* Debug */,
+				701870A01BC91A390082A71F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		701870A11BC91A390082A71F /* Build configuration list for PBXNativeTarget "09-Alert WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				701870A21BC91A390082A71F /* Debug */,
+				701870A31BC91A390082A71F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		701870A51BC91A390082A71F /* Build configuration list for PBXNativeTarget "09-Alert WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				701870A61BC91A390082A71F /* Debug */,
+				701870A71BC91A390082A71F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		701870A91BC91A390082A71F /* Build configuration list for PBXNativeTarget "09-Alert" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				701870AA1BC91A390082A71F /* Debug */,
+				701870AB1BC91A390082A71F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		701870AC1BC91A390082A71F /* Build configuration list for PBXNativeTarget "09-AlertTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				701870AD1BC91A390082A71F /* Debug */,
+				701870AE1BC91A390082A71F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		701870AF1BC91A390082A71F /* Build configuration list for PBXNativeTarget "09-AlertUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				701870B01BC91A390082A71F /* Debug */,
+				701870B11BC91A390082A71F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 701870481BC91A390082A71F /* Project object */;
+}
